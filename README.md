@@ -71,6 +71,14 @@ Anzeige von:
 
 ---
 
+## 🌍 Live Demo
+
+Teste MatchDay direkt im Browser:
+
+🔹 [Zur Demo](https://www.tont-online.de/demo/matchday/demo-matchday.php)
+
+---
+
 ## 🚀 Ziel von OpenCoach
 
 OpenCoach soll kleinen Vereinen helfen.
