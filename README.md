@@ -202,7 +202,31 @@ Der ursprüngliche Hinweis auf OpenCoach bzw. den ursprünglichen Autor sollte e
 
 ---
 
+## 📡 Installations- & Statusübermittlung
+
+MatchDay/SquadTrack kann optional technische Installations- und Statusinformationen an die zentrale OpenCoach-Instanz übermitteln.
+
+Dies dient ausschließlich:
+- Versionsübersicht
+- Fehleranalyse
+- Reichweitenabschätzung
+- Verbesserung der Software
+
+Es werden keine personenbezogenen Daten übertragen.
+
+Übermittelt werden:
+- installierte Version
+- PHP-Version
+- Modulname
+- Statusinformationen
+- Domain
+
+Die Übermittlung kann jederzeit in der install_report.php deaktiviert werden.
+
+---
+
 ## 👨‍💻 Entwickler
 
 Entwickelt aus der Praxis.  
-Von einem Trainer, Organisator und Technik-Nerd, der irgendwann keine Lust mehr auf Turnierchaos hatte.
+Von einem Trainer, Organisator und Technik-Nerd, der irgendwann keine Lust mehr auf Anwesenheitschaos hatte.
+
