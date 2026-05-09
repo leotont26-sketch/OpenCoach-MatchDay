@@ -1,0 +1,38 @@
+/* Mobile improvements & responsive table */
+:root{ --radius: 14px; }
+
+.header-brand img#siteLogo{ height: clamp(64px, 10vw, 120px) !important; }
+
+.table-wrap{ overflow:auto; }
+
+table.responsive{ width:100%; border-collapse: collapse; }
+table.responsive th, table.responsive td{ white-space: nowrap; }
+
+@media (max-width: 720px){
+  table.responsive thead{ display:none; }
+  table.responsive, table.responsive tbody, table.responsive tr, table.responsive td{
+    display:block; width:100%;
+  }
+  table.responsive tr{
+    border:1px solid #1f2937; border-radius: var(--radius);
+    margin:.6rem 0; box-shadow: 0 1px 1px rgba(0,0,0,.2); overflow:hidden;
+    background: rgba(16, 21, 33, .75);
+    backdrop-filter: blur(6px);
+  }
+  table.responsive td{
+    display:flex; justify-content:space-between; align-items:center;
+    gap:.8rem; padding:.55rem .8rem; border-bottom:1px solid #223047;
+  }
+  table.responsive td:last-child{ border-bottom:0; }
+  table.responsive td::before{
+    content: attr(data-label);
+    font-weight:700; font-size:.8rem; color: var(--brand-primary);
+    text-transform: uppercase; letter-spacing:.3px;
+  }
+  .scoreboard{ font-size:1.05rem; padding:.2rem .6rem; }
+}
+
+@media (min-width: 721px){
+  thead th{ position: sticky; top: 0; background: #0b1220; z-index:1; }
+  tbody tr:nth-child(even){ background: color-mix(in srgb, var(--brand-primary) 6%, #0c121d); }
+}

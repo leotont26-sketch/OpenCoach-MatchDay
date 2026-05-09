@@ -1,0 +1,22 @@
+:root {
+  /* Brand Colors */
+  --brand-primary: #00519b;
+  --brand-secondary: #5056ff;
+  --brand-accent: #e04f51;
+  --brand-success: #488f45;
+  --brand-warning: #fcff4c;
+  --brand-dark: #111827;
+}
+
+body { --pico-primary: var(--brand-primary); }
+
+.header-brand {
+  display:flex; align-items:center; gap:1rem; padding: .75rem 0 1rem;
+  border-bottom: 3px solid var(--brand-primary);
+}
+.header-brand img { height: 56px; width:auto; }
+.header-brand .title { font-weight: 800; letter-spacing: .3px; line-height: 1; }
+.header-brand .subtitle { color:#6b7280; font-size: .9rem; }
+
+.badge-brand { background: color-mix(in srgb, var(--brand-secondary) 20%, white); }
+th, td strong { color: var(--brand-dark); }

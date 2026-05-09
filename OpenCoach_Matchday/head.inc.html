@@ -1,0 +1,19 @@
+<?php
+require_once __DIR__ . '/functions.php';
+$brandLogo = brand_logo_url();
+?>
+<meta name="color-scheme" content="dark">
+<!-- Branding head include -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Bebas+Neue&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="<?= $brandLogo ?>">
+<link rel="icon" type="image/png" sizes="32x32" href="<?= $brandLogo ?>">
+<link rel="icon" href="<?= $brandLogo ?>">
+<link rel="manifest" href="/site.webmanifest">
+<script defer src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="theme.css?v=4">
+<link rel="stylesheet" href="theme_sport.css">
+<link rel="stylesheet" href="mobile.css?v=4">
+
+<script defer src="status-config.js?v=4"></script>
+<script defer src="status.js?v=6"></script>
